@@ -10,16 +10,12 @@ function DashboardBox() {
 
 
         <Stack direction="row" spacing={2} justifyContent={'space-around'}>
-            <Grid item md={2}>
+            <Grid item xs={12} sm={12} md={3}>
                 <Box
                     sx={{
 
                         height: 200,
                         backgroundColor: 'secondary.main',
-
-                        // background: "rgb(255,255,255)",
-                        // background:"linear-gradient(250deg, rgba(255,255,255,1) 27%, rgba(25,167,206,1) 99%)"
-
                     }}
                 >
                     <Stack direction={'column'} justifyContent={"center"} alignItems={"center"} height={"100%"}>
@@ -29,13 +25,11 @@ function DashboardBox() {
 
                 </Box>
             </Grid>
-            <Grid item md={2}>
+            <Grid item xs={12} sm={12} md={3}>
                 <Box
                     sx={{
-
                         height: 200,
                         backgroundColor: 'secondary.main',
-
                     }}
                 >
                     <Stack direction={'column'} justifyContent={"center"} alignItems={"center"} height={"100%"}>
@@ -45,7 +39,7 @@ function DashboardBox() {
 
                 </Box>
             </Grid>
-            <Grid item md={2}>
+            <Grid item xs={12} sm={12} md={3}>
                 <Box
                     sx={{
 
@@ -61,10 +55,7 @@ function DashboardBox() {
 
                 </Box>
             </Grid>
-
         </Stack>
-
-
     );
 }
 

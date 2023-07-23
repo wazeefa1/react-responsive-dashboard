@@ -7,8 +7,10 @@ const theme = createTheme({
     },
     secondary:{
         main:'#19A7CE'
+    },
+    tertiary:{
+      main:'#F6F1F1'
     }
-    // Other color customizations
   },
 });
 
@@ -21,6 +23,9 @@ const mobileTheme = createTheme({
     secondary: {
       main: '#F55A4C',
     },
+    tertiary:{
+      main:'#F6F1F1'
+    }
   },
 });
 

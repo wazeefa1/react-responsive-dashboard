@@ -1,9 +1,11 @@
 import React from 'react'
-import {Container, Stack, Grid, Typography} from '@mui/material'
+import {Stack, Grid, Typography} from '@mui/material'
 
 //components 
 import DataTable from '../../components/DataTabel/DataTable'
 import DashboardBox from '../../components/DashboardBox/DashboardBox'
+import Box from '../../components/BoxComponent/BoxComponent'
+import PieChart from '../../components/Charts/PieChart'
 
 // mock datas
 import {bookings} from '../../mocks/dashboard'
@@ -26,23 +28,21 @@ const bookingsTableHead = [
 function Dashboard() {
   return (
     <Grid container spacing={2}>
-
-      
-        
-     <Grid item md ={12}>
-      <DashboardBox/>
-     </Grid>
-
-    <Grid item md={12}>
+      <Grid item xs={12} sm={12} md={12}>
       <Typography variant="h5">
         July 4, 2023
       </Typography>
     </Grid>
-    <Grid item md={12}>
+     <Grid item xs={12} sm={12} md={12}>
+      <DashboardBox/>
+     </Grid>
+    
+    <Grid item xs={12} sm={12} md={6}>
       <DataTable rows={bookings} columns={bookingsTableHead}  />
     </Grid>
-      
-
+    <Grid item xs={12} sm={12} md={6}>
+      <Box height={400} childComponent={<PieChart/>} />
+    </Grid>
     </Grid>
   )
 }

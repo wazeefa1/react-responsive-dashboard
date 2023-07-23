@@ -13,3 +13,10 @@
 .css-1oqqzyl-MuiContainer-root {
   max-width:100% !important;
 }
+
+
+
+.chart-container {
+  width: 55% !important;
+  height: 55% !important;
+}
